@@ -1,0 +1,20 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Generated data files
+bots/hyperliquid/data/ppls_positions/*.csv
+
+# Specific user files
+
+# Environment stuff (if you use .env)
+.env*
+
+# Unrelated/Test files
+test_cmc_api.py
+api/
+bots/hyperliquid/data/ppls_positions/Price_Ticker/
+
+# Ignore the user's actual address list
+bots/hyperliquid/data/ppls_positions/whale_addresses.txt
