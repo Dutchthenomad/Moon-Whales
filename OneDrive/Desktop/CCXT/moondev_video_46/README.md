@@ -1,20 +1,35 @@
 # HyperLiquid Whale Position Tracker & Dashboard
 
-## Acknowledgements
+## Credits and Acknowledgements
 
 This code was pulled from the 'Day 46' video from the MoonDev Course and all credit must go to him, despite anything referencing Moon Dev in the script being changed to 'Nomad Dev OPS'.
+
+### MoonDev Credits
+
+All credit for this project goes to MoonDev who can be found here:
+
+- Project updates will be posted in Discord, join here: [moondev.com](https://moondev.com)
+- Free Algo Trading Roadmap: [moondev.com](https://moondev.com)
+- Algo Trading Education: [algotradecamp.com](https://algotradecamp.com)
+- Business Contact: moon@algotradecamp.com
+
+MoonDev offers a high quality boot camp and group, and I credit his courses for everything I've done.
+
+The screenshots in this repository are from the `dashboard_3per.py` terminal interface.
+
+## Project Overview
 
 This project fetches and analyzes open positions for a list of specified wallet addresses on the HyperLiquid DEX.
 
 It consists of two main components:
 
-1.  **`ppls_pos_server.py`**: Fetches position data from the HyperLiquid API for addresses listed in `whale_addresses.txt`, filters them based on minimum value, and saves the raw and aggregated data to CSV files.
-2.  **`dashboard_3per.py`**: Reads the generated CSV files and displays a terminal-based dashboard with:
-    *   Top individual long/short positions.
-    *   Aggregated long/short exposure per coin.
-    *   Positions closest to liquidation.
-    *   Market funding rates.
-    *   Liquidation threshold analysis.
+1. **`ppls_pos_server.py`**: Fetches position data from the HyperLiquid API for addresses listed in `whale_addresses.txt`, filters them based on minimum value, and saves the raw and aggregated data to CSV files.
+2. **`dashboard_3per.py`**: Reads the generated CSV files and displays a terminal-based dashboard with:
+   - Top individual long/short positions.
+   - Aggregated long/short exposure per coin.
+   - Positions closest to liquidation.
+   - Market funding rates.
+   - Liquidation threshold analysis.
 
 ## Setup
 
